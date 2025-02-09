@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -20,14 +22,17 @@
             background-color: #f4f4f4;
             padding: 10px 0;
         }
+
         nav ul li {
             padding: 0 15px;
         }
+
         nav ul li a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
         }
+
         .btn {
             background-color: rgb(140, 140, 140);
             color: white;
@@ -42,34 +47,47 @@
             justify-content: center;
             margin: 10px 5px;
         }
+
         .btn i {
             margin-right: 8px;
         }
+
         .hero {
-            background-image: url('coverpicture.png');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-        }
+    background-image: url('coverpicture.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-top: 60px; /* Moves the image down */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
         .contact-links {
             text-align: center;
             padding: 20px 0;
         }
+
         .events-section {
             padding: 20px;
             background-color: #fff;
             text-align: center;
         }
+
         .event {
             margin: 20px;
             display: inline-block;
             width: 30%;
         }
+
         .event img {
             width: 100%;
             height: auto;
             border-radius: 5px;
         }
+
         footer {
             text-align: center;
             padding: 10px 0;
@@ -77,65 +95,74 @@
         }
     </style>
 </head>
+
 <body>
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="karate.html">What is Karate?</a></li> 
-                <li><a href="about.html">About</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                
-            </ul>
-        </nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="karate.html">What is Karate?</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
-        <!-- Hero Section with Cover Image -->
-        <header class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Hoosier Karate</h1>
-                <h2 class="major">Learn the Art of Karate</h2>
-            </div>
-        </header>
+        </ul>
+    </nav>
 
-        <!-- Contact and Social Media Links -->
-        <div class="contact-links">
-            <a href="mailto:info@hoosierkarate.com" class="btn"><i class="fas fa-envelope"></i> Email Us</a>
-            <a href="https://www.facebook.com/HoosierKarate" class="btn" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
-            <a href="https://twitter.com/HoosierKarate" class="btn" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-            <a href="https://www.instagram.com/HoosierKarate" class="btn" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <!-- Hero Section with Cover Image -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Hoosier Karate</h1>
+            <h2 class="major">Learn the Art of Karate</h2>
         </div>
+    </header>
 
-        <!-- About Us Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to Hoosier Karate, a premier martial arts training center located in the heart of Bloomington, Indiana. We are dedicated to teaching the discipline and skills of karate to the Hoosiers community. Our experienced instructor is committed to helping each student achieve their best.</p>
-            <p>Meet our instructor and learn about our philosophy on our <a href="about.html">About</a> page.</p>
-        </section>
+    <!-- Contact and Social Media Links -->
+    <div class="contact-links">
+        <a href="mailto:info@hoosierkarate.com" class="btn"><i class="fas fa-envelope"></i> Email Us</a>
+        <a href="https://www.facebook.com/HoosierKarate" class="btn" target="_blank"><i class="fab fa-facebook-f"></i>
+            Facebook</a>
+        <a href="https://twitter.com/HoosierKarate" class="btn" target="_blank"><i class="fab fa-twitter"></i>
+            Twitter</a>
+        <a href="https://www.instagram.com/HoosierKarate" class="btn" target="_blank"><i class="fab fa-instagram"></i>
+            Instagram</a>
+    </div>
 
-        <!-- Events Section -->
-        <section class="events-section">
-            <h2>Recent Events</h2>
-            <div class="event">
-                <img src="event1.png" alt="Event 1">
-                <p>Annual Karate Championship - An exciting day of competition and skill demonstration.</p>
-            </div>
-            <div class="event">
-                <img src="event2.png" alt="Event 2">
-                <p>Workshop for Beginners - Everyone started somewhere, and this event helps get you on your feet!</p>
-            </div>
-            <div class="event">
-                <img src="event3.png" alt="Event 3">
-                <p>Interdojo Tournament - Our students compete with others from different dojos in a friendly yet competitive environment.</p>
-            </div>
-        </section>
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Hoosier Karate, a premier martial arts training center located in the heart of Bloomington,
+            Indiana. We are dedicated to teaching the discipline and skills of karate to the Hoosiers community. Our
+            experienced instructor is committed to helping each student achieve their best.</p>
+        <p>Meet our instructor and learn about our philosophy on our <a href="about.html">About</a> page.</p>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2025 Hoosier Karate. All rights reserved.</p>
-        </footer>
+    <!-- Events Section -->
+    <section class="events-section">
+        <h2>Recent Events</h2>
+        <div class="event">
+            <img src="event1.png" alt="Event 1">
+            <p>Annual Karate Championship - An exciting day of competition and skill demonstration.</p>
+        </div>
+        <div class="event">
+            <img src="event2.png" alt="Event 2">
+            <p>Workshop for Beginners - Everyone started somewhere, and this event helps get you on your feet!</p>
+        </div>
+        <div class="event">
+            <img src="event3.png" alt="Event 3">
+            <p>Interdojo Tournament - Our students compete with others from different dojos in a friendly yet
+                competitive environment.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hoosier Karate. All rights reserved.</p>
+    </footer>
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
