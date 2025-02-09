@@ -1,0 +1,146 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4; /* Set background to white for minimalistic look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main content wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 800px; /* Adjusted max-width for a more narrow appearance */
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    
+    width: 100%;
+    /* max-width: 0; Ensure nav is within the same width as the content */
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjust spacing between buttons */
+}
+
+nav ul li a {
+    display: block; /* Ensures the link uses the full area of li */
+    padding: 10px 20px; /* Button-like padding */
+    background-color: #f2f2f2; /* Light grey background */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners for button effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Darker background on hover */
+    color: #000; /* Darker text on hover */
+}
+
+/* Hero Section Styling */
+header {
+    width: 100%;
+    max-width: 800px;
+    background: #fff; /* White background with a light image or none */
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Section Styling */
+section {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff; /* Maintain white background for cleanliness */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadows for depth */
+    box-sizing: border-box;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    max-width: 800px;
+    background: #f8f8f8; /* Slightly off-white background for the footer */
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    background: #f8f8f8; /* Light background for forms */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}

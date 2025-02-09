@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About - Hoosier Karate</title>
+    <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Ensures the whole page uses a consistent font */
+        }
+        
+
+        nav ul {
+            list-style: none;
+            /* Removes bullet points from the list */
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            /* Center aligns navigation links */
+            background-color: #f4f4f4;
+            /* Light background for the nav bar */
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            padding: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .instructor-profile {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            /* Adds margin around the profile section */
+            padding: 20px;
+            /* Adds padding inside the profile section */
+            background-color: #f4f4f4;
+            /* White background for content areas */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+        }
+
+        .instructor-profile img {
+            width: 200px;
+            /* Fixed width for the image */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 50%;
+            /* Makes the image round */
+            margin-right: 20px;
+            /* Adds space between image and text */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f4f4f4;
+        }
+
+        .events-gallery {
+            display: flex;
+            justify-content: space-around;
+            /* Evenly spaces the images */
+            padding: 20px;
+        }
+
+        .events-gallery img {
+            width: 30%;
+            /* Each image takes up 30% of the container's width */
+            height: auto;
+            /* Maintain aspect ratio */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Shadow for depth */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="karate.html">What is Karate?</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="instructor-profile">
+        <img src="instructor.png" alt="Instructor John Doe">
+        <div>
+            <h1>About Our Instructor</h1>
+            <p>John Doe has been a karate practitioner for over 20 years and has been teaching in Bloomington for the
+                past 10 years. He is passionate about martial arts and dedicated to providing high-quality training to
+                students of all ages and skill levels.</p>
+        </div>
+    </section>
+
+    <section class="events-gallery">
+        <img src="event1.png" alt="Event 1">
+        <img src="event2.png" alt="Event 2">
+        <img src="event3.png" alt="Event 3">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hoosier Karate. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
