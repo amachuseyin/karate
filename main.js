@@ -15,7 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const navUL = document.querySelector('nav ul');
     menuButton.addEventListener('click', () => {
         navUL.classList.toggle('open');
+        function toggleMenu() {
+            var menu = document.querySelector(".nav-menu");
+            menu.classList.toggle("open");
+        }
+        
     });
+    
+
 
     // Scroll Animations
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
@@ -61,3 +68,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
